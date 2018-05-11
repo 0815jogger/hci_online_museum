@@ -25,7 +25,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{cite}
 %\usepackage[numbers]{natbib}
-\usepackage[english, ngerman]{babel}% deutsche Trennregeln
+\usepackage[english, main=ngerman]{babel}% deutsche Trennregeln
 %\usepackage[T1]{fontenc}% wichtig für Trennung von Wörtern mit Umlauten
 \usepackage{microtype}% verbesserter Randausgleich
 
@@ -42,10 +42,10 @@
 
 % first the title is needed
 
-\title{Interaktives Onlinemuseum\\Analyse\\ Prototyping\\ Evaluation}
+\title{Virtuelles Museum\\Analyse\\ Prototyping\\ Evaluation}
 
 % a short form should be given in case it is too long for the running head
-\titlerunning{Interaktives Onlinemuseum}
+\titlerunning{Virtuelles Museum}
 
 % the name(s) of the author(s) follow(s) next
 %
@@ -62,7 +62,7 @@
 	   }
 
 %
-\authorrunning{Interaktives Onlinemuseum}
+\authorrunning{Virtuelles Museum}
 % (feature abused for this document to repeat the title also on left hand pages)
 
 % the affiliations are given next; don't give your e-mail address
@@ -113,8 +113,44 @@
 \section{Einleitung}
 \section{Anforderungsanalyse}
 \subsection{Anwendungsfälle und Nutzungskontext}
+Laut Miedler 2010 ist ein Museum eine Einrichtung, die zu Bildungs- und Forschungszwecken Zeugnisse von Umwelt und Menschen, der Öffentlichkeit zur Verfügung stellt und aufbewahrt. Die Zeugnisse von Umwelt und Menschen können sehr vielfältig sein. Dabei kann es sich um Bauarten wie Schlösser und Burgen handeln, als auch um Kunstobjekte aus der Malerei oder Fotografie sowie naturwissenschaftliche oder technische Erzeugnisse. Somit lassen sich Museen in verschiedene Arten einteilen, wie beispielsweise in Burg- und Schlossmuseum, Kunstmuseum, technisches oder naturkundliches Museum. Nicht nur der Bildungs- und Forschungszweck eines Museums soll erfüllt werden, sondern das Erleben der Zeugnisse soll innerhalb einer Ausstellung erreicht werden. Ausstellungen können dabei dauerhaft oder wechselnd kuratiert werden, wobei sie je nach Art des Museums an einem bestimmten Ort gebunden sind. Aufgrund der Vielzahl von Museumsarten und dem Zweck des Bildungs- und Forschungsauftrages bzw. Erlebnisses, besitzen Museen eine weitgefasste Zielgruppe. Daraus ergeben sich Interessengruppen, die sich aus der jeweiligen Art des Museums oder aus verschiedenen Berufsgruppen wie beispielsweise Lehrer, Schüler, Studenten oder Mitarbeiter des Museums wie Kuratoren oder Archivare  ergeben\cite[S. 29]{Miedler.2010}.\\ 
+
+Das virtuelle Museum kann die Grenzen des Ortsbezuges aufheben. Beispielsweise kann ein virtuelles Museum über das Internet erreichbar sein, sodass die Ausstellungsstücke unabhängig von einem bestimmten Ort zugänglich sind. Aufgrund des Standes der Technik ist es möglich das Erleben der Ausstellungstücke durch das Interagieren und Herstellen von Zusammenhängen im virtuellen Raum greifbar zu machen. Durch das Bereitstellen von Informationen im virtuellen Raum auf individuelle Art und Weise kann vor allem dem Bildungsanspruch entsprochen werden und somit im besonderen der Zielgruppe Lehrer und Schüler entsprochen werden. Mitarbeiter eines Museums wie beispielsweise Kuratoren oder Archivare könnten vom virtuellen Museum profitieren innerhalb einer dreidimensionalen Datenbank als Überblick zur Verwaltung und zum Austausch von Ausstellungsstücken oder beim virtuellen zusammenstellen von Ausstellungen. Im folgenden Abschnitt zeigt der Stand der Technik weiterführende Möglichkeiten wie ein virtuelles Museum verstanden werden kann.\\
+
 \subsection{Stand der Technik}
+
+Eine Kategorie wie ein virtuelles Museum verstanden werden kann, ist das Online-Museum. Darunter können Museen verstanden werden, die im Internet virtuell, begehbar und interaktiv nutzbar sind. Ein Beispiel dafür ist das Google Art Projekt \cite{GoogleCultureInstitut.2011}. Es ermöglicht Ausstellungshäuser weltweit zu erkunden. Auf dieser Seite können sich Nutzer durch die Bestände der Museen klicken und eigene Galerien anlegen, sowie virtuelle Rundgänge durch die Museen machen. Ziel eines Online-Museums ist es die Nutzer in das entsprechende Museum zu locken.\\ 
+
+Die zweite mögliche Kategorie virtuelle Museen einzuordnen ist das VR-Museum. Dabei wird die VR-Technologie verwendet, um Nutzer mittels einer App und einer VR-Brille einen Museumsbesuch zu ermöglichen. Diese Variante ist Ort- und Zeitunabhängig. Das Museum für Naturkunde in Berlin verwendet die Technologie, um einen Dinosaurier zum Leben zu erwecken. Dabei kann der Besucher sich vor Ort eine VR-Brille ausleihen oder via App Ortsunabhängig sich den Dinosaurier ansehen. In einer dritten Kategorie können mittels AR-Technologie sich auf einem Tablett zusätzliche Informationen zu Ausstellungsstücken angezeigt werden, sowie es das Bayerische Nationalmuseum in München macht \cite{GoetheInstitute.V..2017}.\\
+
+Im Bereich der 3D-Druck Technologie können Ausstellungsstücke als 3D-Objekt ausgedruckt werden. Das Projekt Museum in a Box verleiht gedruckte 3D-Objekte aus einem Museum in einer kleinen Box. Die Ausstellungsstücke in Miniformat kommunizieren über das Internet, um Informationen zu einem bestimmten Objekt abzurufen und sprachlich wiederzugeben. Somit werden die Ausstellungsstücke anfassbar und können in einen bestimmten Kontext gestellt werden \cite{GeorgeOates.2015}.\\
+
+Im Bereich der Tangible Interfaces Technologie kann die 3D-Druck Technologie verwendet werden, um 3D-Ausdrucke von Ausstellungsstücken als Interface zu nutzen. Die 3D-Objekte sind mit Sensoren und Elektronik ausgestattet, sodass mit Ausstellungsstücken interagiert werden kann \cite{Capurro.2015}.\\ 
+
+Zusammenfassend lässt sich sagen, dass die Technologien 3D-Druck, Augmented Reality (AR) und Virtuell Reality (VR) es ermöglichen ein virtuelles Museum auf unterschiedlichste Art und Weise entstehen zu lassen. Dabei können die Technologien ein Museum virtuell ergänzen oder es gänzlich ersetzen. Die Interaktion innerhalb eines virtuellen Museums ist mit Tangible User Interfaces denkbar, bei dem dreidimensionale Objekte mit Hilfe von einem anfassbaren Objekt die virtuellen Ausstellungsstücke bewegt und gesteuert werden. Der 3D-Druck kann Ausstellungsstücke in Miniformat haptisch erlebbar und zu einem Sammelobjekt, das mit einem Informationsgewinn verknüpft wird, gemacht werden. Die Technologie AR kann ein Museum ergänzen, indem Ausstellungstücke in einen virtuellen Kontext gesetzt werden oder mit Informationen versehen werden, die der Nutzer sich individuell anpassen kann. Der Nutzer kann entscheiden, wie die Information ausgeben wird. Vorstellbar ist, dass die Sprache oder Textform, die Tiefe der Information und die Geschwindigkeit der Darstellung gewählt werden können. Im folgenden Abschnitt werden die Ziele und Ergebnisse der durchgeführten Fokusgruppe zum Thema virtuelle Museen vorgestellt.\\
+
 \subsection{Fokusgruppe}
+Im Rahmen der Fokusgruppe wurde untersucht, wie die Interaktion mit den Ausstellungsstücken in einem virtuellen Museum gestaltet werden kann. Dafür wurde zunächst erörtert wie ein klassischer Museumsbesuch und die Interaktion mit den Ausstellungsstücken aussieht. Im zweiten Schritt wurde herausgearbeitet wie in einem virtuellen Museum die Interaktion mit den Ausstellungsstücken aussehen könnte. Ziel war es herauszufinden wie sich die Nutzer ein interaktives Museum vorstellen, welche Technologien dafür verwendet werden sollten und wie die Interaktion mit Hilfe entsprechender Technologien auf ein virtuelles Museum anwendbar ist.\\
+
+Insgesamt waren vier Teilnehmer an der Fokusgruppe beteiligt. Jeder der Teilnehmer war schon einmal in einem Museum, wobei drei der Teilnehmer mindestens zweimal im Jahr ins Museum gehen. Dabei handelt es sich vor allem um Kunstmuseen oder Fotoausstellungen.\\
+
+Die Fokusgruppe wurde von einem Komoderator und einem Moderator geführt und von zwei Protokollanten schriftlich festgehalten. Nach einer inhaltlichen Einleitung haben sich die Teilnehmer vorgestellt, indem sie die Fragen beantworten sollten Was der Anlass eines Museumsbesuch ist und welche Erfahrungen sie bisher während eines Museumsbesuchs gemacht haben. Nach der Vorstellungsrunde wurden zur Weiterentwicklung des Gesprächs folgende offene Fragen beantwortet, die sich an einem halboffen Leitfaden orientierten:
+\begin{itemize}
+	\item Was erwarte ich von einem guten Museumsbesuch?
+	\item Wie sollen die Ausstellungsstücke präsentiert werden?
+	\item Wie sieht ein Museumsbesuch aus? Gibt es Vor- oder Nachbereitungen?
+	\item Wie agiert ihr mit den Ausstellungsstücken?
+\end{itemize}
+
+Danach wurde das Video Museum in a Box gezeigt, indem die Organisation ihr Konzept vom Museum in der Box darstellt. Das Video dient als Überleitung zu virtuellen Museen als eine neue Form der Museen mit veränderten Möglichkeiten zur Interaktion mit Ausstellungsstücken. Im folgenden wurde der Frage nachgegangen wie sie sich ein virtuelles Museum vorstellen und wie darin mit Ausstellungsstücken interagiert werden kann.\\
+
+Ergebnisse
+Tabelle Stand der Technik vr ar von Teilnehmern erkannt als Kategorien.
+Auswertung
+
+
+Wie kann man die Nutzererfahrung intuitiv und interaktiv gestalten?
+Interaktives Onlinemuseum virtuelles Museum
 
 
 \section{Prototyping: low fidelity}
