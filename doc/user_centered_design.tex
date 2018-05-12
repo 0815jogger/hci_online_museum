@@ -28,6 +28,8 @@
 \usepackage[english, main=ngerman]{babel}% deutsche Trennregeln
 %\usepackage[T1]{fontenc}% wichtig für Trennung von Wörtern mit Umlauten
 \usepackage{microtype}% verbesserter Randausgleich
+\usepackage[hidelinks]{hyperref}
+\usepackage{multirow}
 
 \usepackage{url}
 %\urldef{\mailsa}\path|{alfred.hofmann, ursula.barth, ingrid.haas, frank.holzwarth,|
@@ -100,6 +102,9 @@
 \thispagestyle{empty}
 \listoffigures
 \newpage
+\thispagestyle{empty}
+\listoftables
+\newpage
 \setcounter{page}{1}
 
 \selectlanguage{english}
@@ -117,11 +122,11 @@ Laut Miedler 2010 ist ein Museum eine Einrichtung, die zu Bildungs- und Forschun
 
 Das virtuelle Museum kann die Grenzen des Ortsbezuges aufheben. Beispielsweise kann ein virtuelles Museum über das Internet erreichbar sein, sodass die Ausstellungsstücke unabhängig von einem bestimmten Ort zugänglich sind. Aufgrund des Standes der Technik ist es möglich das Erleben der Ausstellungstücke durch das Interagieren und Herstellen von Zusammenhängen im virtuellen Raum greifbar zu machen. Durch das Bereitstellen von Informationen im virtuellen Raum auf individuelle Art und Weise kann vor allem dem Bildungsanspruch entsprochen werden und somit im besonderen der Zielgruppe Lehrer und Schüler entsprochen werden. Mitarbeiter eines Museums wie beispielsweise Kuratoren oder Archivare könnten vom virtuellen Museum profitieren innerhalb einer dreidimensionalen Datenbank als Überblick zur Verwaltung und zum Austausch von Ausstellungsstücken oder beim virtuellen zusammenstellen von Ausstellungen. Im folgenden Abschnitt zeigt der Stand der Technik weiterführende Möglichkeiten wie ein virtuelles Museum verstanden werden kann.\\
 
-\subsection{Stand der Technik}
+\subsection{Stand der Technik} \label{standtechnik}
 
-Eine Kategorie wie ein virtuelles Museum verstanden werden kann, ist das Online-Museum. Darunter können Museen verstanden werden, die im Internet virtuell, begehbar und interaktiv nutzbar sind. Ein Beispiel dafür ist das Google Art Projekt \cite{GoogleCultureInstitut.2011}. Es ermöglicht Ausstellungshäuser weltweit zu erkunden. Auf dieser Seite können sich Nutzer durch die Bestände der Museen klicken und eigene Galerien anlegen, sowie virtuelle Rundgänge durch die Museen machen. Ziel eines Online-Museums ist es die Nutzer in das entsprechende Museum zu locken.\\ 
+Eine Kategorie wie ein virtuelles Museum verstanden werden kann, ist das Online-Museum. Darunter können Museen fallen, die im Internet virtuell, begehbar und interaktiv nutzbar sind. Ein Beispiel dafür ist das Google Art Projekt \cite{GoogleCultureInstitut.2011}. Es ermöglicht Ausstellungshäuser weltweit zu erkunden. Auf dieser Seite können sich Nutzer durch die Bestände der Museen klicken und eigene Galerien anlegen, sowie virtuelle Rundgänge durch die Museen machen. Ziel eines Online-Museums ist es die Nutzer in das entsprechende Museum zu locken.\\ 
 
-Die zweite mögliche Kategorie virtuelle Museen einzuordnen ist das VR-Museum. Dabei wird die VR-Technologie verwendet, um Nutzer mittels einer App und einer VR-Brille einen Museumsbesuch zu ermöglichen. Diese Variante ist Ort- und Zeitunabhängig. Das Museum für Naturkunde in Berlin verwendet die Technologie, um einen Dinosaurier zum Leben zu erwecken. Dabei kann der Besucher sich vor Ort eine VR-Brille ausleihen oder via App Ortsunabhängig sich den Dinosaurier ansehen. In einer dritten Kategorie können mittels AR-Technologie sich auf einem Tablett zusätzliche Informationen zu Ausstellungsstücken angezeigt werden, sowie es das Bayerische Nationalmuseum in München macht \cite{GoetheInstitute.V..2017}.\\
+Die zweite mögliche Kategorie virtuelle Museen einzuordnen ist das VR-Museum. Dabei wird die VR-Technologie verwendet, um Nutzer mittels einer App und einer VR-Brille einen Museumsbesuch zu ermöglichen. Diese Variante ist Ort- und Zeitunabhängig. Das Museum für Naturkunde in Berlin verwendet die Technologie, um einen Dinosaurier zum Leben zu erwecken. Dabei kann der Besucher sich vor Ort eine VR-Brille ausleihen oder via App Ortsunabhängig sich den Dinosaurier ansehen. In einer dritten Kategorie können mittels AR-Technologie sich auf einem Tablet zusätzliche Informationen zu Ausstellungsstücken angezeigt werden, sowie es das Bayerische Nationalmuseum in München macht \cite{GoetheInstitute.V..2017}.\\
 
 Im Bereich der 3D-Druck Technologie können Ausstellungsstücke als 3D-Objekt ausgedruckt werden. Das Projekt Museum in a Box verleiht gedruckte 3D-Objekte aus einem Museum in einer kleinen Box. Die Ausstellungsstücke in Miniformat kommunizieren über das Internet, um Informationen zu einem bestimmten Objekt abzurufen und sprachlich wiederzugeben. Somit werden die Ausstellungsstücke anfassbar und können in einen bestimmten Kontext gestellt werden \cite{GeorgeOates.2015}.\\
 
@@ -134,7 +139,7 @@ Im Rahmen der Fokusgruppe wurde untersucht, wie die Interaktion mit den Ausstell
 
 Insgesamt waren vier Teilnehmer an der Fokusgruppe beteiligt. Jeder der Teilnehmer war schon einmal in einem Museum, wobei drei der Teilnehmer mindestens zweimal im Jahr ins Museum gehen. Dabei handelt es sich vor allem um Kunstmuseen oder Fotoausstellungen.\\
 
-Die Fokusgruppe wurde von einem Komoderator und einem Moderator geführt und von zwei Protokollanten schriftlich festgehalten. Nach einer inhaltlichen Einleitung haben sich die Teilnehmer vorgestellt, indem sie die Fragen beantworten sollten Was der Anlass eines Museumsbesuch ist und welche Erfahrungen sie bisher während eines Museumsbesuchs gemacht haben. Nach der Vorstellungsrunde wurden zur Weiterentwicklung des Gesprächs folgende offene Fragen beantwortet, die sich an einem halboffen Leitfaden orientierten:
+Die Fokusgruppe wurde von einem Komoderator und einem Moderator geführt und von zwei Protokollanten schriftlich festgehalten. Nach einer inhaltlichen Einleitung haben sich die Teilnehmer vorgestellt, indem sie die Fragen beantworten sollten was der Anlass eines Museumsbesuch ist und welche Erfahrungen sie bisher während eines Museumsbesuchs gemacht haben. Nach der Vorstellungsrunde wurden zur Weiterentwicklung des Gesprächs folgende offene Fragen beantwortet, die sich an einem halboffen Leitfaden orientierten:
 \begin{itemize}
 	\item Was erwarte ich von einem guten Museumsbesuch?
 	\item Wie sollen die Ausstellungsstücke präsentiert werden?
@@ -142,16 +147,44 @@ Die Fokusgruppe wurde von einem Komoderator und einem Moderator geführt und von
 	\item Wie agiert ihr mit den Ausstellungsstücken?
 \end{itemize}
 
-Danach wurde das Video Museum in a Box gezeigt, indem die Organisation ihr Konzept vom Museum in der Box darstellt. Das Video dient als Überleitung zu virtuellen Museen als eine neue Form der Museen mit veränderten Möglichkeiten zur Interaktion mit Ausstellungsstücken. Im folgenden wurde der Frage nachgegangen wie sie sich ein virtuelles Museum vorstellen und wie darin mit Ausstellungsstücken interagiert werden kann.\\
+Als gute Museen wurden das Mathematikum Gießen, das Naturkundemuseum Berlin und das jüdische Museum Berlin benannt. Das Mathematikum begeistert, da in Form von interaktiven Experimenten Mathematik erlebt werden kann, wohingegen das Naturkundemuseum vor allem durch seine Ausstellungsstücke wie den Dinosaurier in Lebensgröße besticht. Beeindruckend ist das Jüdische Museum, weil es mit begehbaren Installationen die Ausstellungsstücke erlebbar macht.\\
 
-Ergebnisse
-Tabelle Stand der Technik vr ar von Teilnehmern erkannt als Kategorien.
-Auswertung
+Grundsätzlich wird ein Museum auf Reisen bzw. im Urlaub besucht ohne Vor- oder Nachbereitungen, sondern eher spontan. Dabei wird Kunst als interessant bezeichnet und am ehesten werden Fotoausstellungen besucht. Innerhalb des Museums wird sich treiben gelassen und durch die Ausstellungsräume geschlendert. Dabei werden die Tafeln für den Informationsgewinn gelesen. Ein Museumsbesuch sollte Lehrreich sein, wobei Interaktionen nicht wichtig sind. Weiterhin wird das Museum gerne genutzt, um  Freunde zu treffen und gemeinsam über die Ausstellungsstücke zu sprechen. Wenn es was zum Anfassen gibt, wird das gerne ausprobiert. Meist wird mit den Ausstellungsstücken durch Beobachtungen interagiert.\\
 
+Nach der Diskussion wurde das Video Museum in a Box gezeigt, indem die Organisation ihr Konzept vom Museum in der Box darstellt. Das Video dient als Überleitung zu virtuellen Museen als eine neue Form der Museen mit veränderten Möglichkeiten zur Interaktion mit Ausstellungsstücken. Im folgenden wurde der Frage nachgegangen wie sie sich ein virtuelles Museum vorstellen und wie darin mit Ausstellungsstücken interagiert werden kann.\\
 
-Wie kann man die Nutzererfahrung intuitiv und interaktiv gestalten?
-Interaktives Onlinemuseum virtuelles Museum
+In Form einer Diskussion haben die Teilnehmer die Kategorien eines virtuellen Museum aus dem Abschnitt \nameref{standtechnik} herausgearbeitet und bewertet. Die Tabelle fasst die Ergebnisse dieser Diskussion zusammen.\\
 
+\begin{table}
+\begin{tabular}{|c|c|}\hline
+	Kategorie							& Beurteilung	\\ 
+										\hline
+	\multirow{2}*{Online-Museum}		& negativ bewertet,\\
+						  				& da viel verloren geht aus dem Museum\\ \hline
+	\multirow{5}*{Virtual Reality}		& innerhalb eines Museums negativ, weil man\\
+	                                    & das zu Haus machen kann\\
+	                      				& Technik selber als positiv bewertet, weil\\
+	                      				& damit unmögliches möglich gemacht werden kann\\
+	                     				& unerreichbare Orte sind damit erreichbar\\ \hline
+	\multirow{3}*{Augmented Reality}	& positiv in einem Museum,\\ 
+				                    	& um über Gesten, Schieben und Ziehen\\
+	                     				& mit Ausstellungsstück zu agieren\\
+	                     				 \hline
+	\multirow{4}*{3D-Druck}				& positiv bewertet\\
+										& Figuren als Teaser, um Ausstellungstücke\\
+										& im Museum in echt zu sehen\\
+										& zusammenstellen von eigener Ausstellung\\ \hline
+	\multirow{1}*{Tangible Interface}	& nicht benannt\\ 
+
+										\hline
+
+\end{tabular}\\
+\caption{Bewertung der Kategorien eines virtuellen Museums als Interaktionsmöglichkeiten}
+\end{table}
+
+Während der Diskussion sind viele Ideen entstanden, wie die Techniken verwendet werden können. Dabei stand vor allem die spielerische Auseinandersetzung mit den Ausstellungsstücken eine Rolle. Dabei entstanden Ideen wie beispielsweise das eigene Zusammenstellen und ausdrucken einer eigenen Ausstellung, das Nachstellen und Erleben von Unmöglichen Situationen wie der Reise zu Mond oder 1000 Meter unter dem Meer oder das spielerische nachzeichnen der Mona Lisa sowie das Umschmeißen im Duell mit Freunden einer Ming-Vase.\\
+
+Auswertung/ Fazit
 
 \section{Prototyping: low fidelity}
 \subsection{Papierprototyp}
