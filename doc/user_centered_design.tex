@@ -41,6 +41,10 @@
 %\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|    
 \newcommand{\keywords}[1]{\par\addvspace\baselineskip
 \noindent\keywordname\enspace\ignorespaces#1}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\cdot$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
 
 \begin{document}
 
@@ -280,10 +284,12 @@ Daraus lassen sich für die Entwicklung des Systems die in der Tabelle aufgefüh
 Im nächsten Abschnitt wird beschrieben, wie die gewonnen Erkenntnisse über die Anforderungen eines virtuellen Museums in Form eines Papierprototypen umgesetzt werden.
 
 \section{Prototyping: low fidelity}
-Insgesamt wurden vier Prototypen entwickelt, die im Kapitel \nameref{chapt:paperproto} vorgestellt werden. Für die Umsetzung wurden Anwendungen für das Naturkunde Museum hergestellt. Aufgrund der Ergebnisse der Fokusgruppe sind vier sehr unterschiedliche Anwendungen entstanden. Zwei davon sind AR Anwendungen, die für die heuristische Evaluation verwendet wurden. Eine gute Gebrauchstauglichkeit ist gegeben, wenn mit dem System die Ziele erreicht werden können. Mit Hilfe der heuristischen Evaluation soll die Gebrauchstauglichkeit anhand der Heuristiken von Nielson ermittelt werden.\\
+Insgesamt wurden vier Prototypen entwickelt, die im Kapitel \nameref{chapt:paperprotos} vorgestellt werden. Für die Umsetzung wurden Anwendungen für das Naturkunde Museum hergestellt. Aufgrund der Ergebnisse der Fokusgruppe sind vier sehr unterschiedliche Anwendungen entstanden. Zwei davon sind AR Anwendungen, die für die heuristische Evaluation verwendet wurden. Eine gute Gebrauchstauglichkeit ist gegeben, wenn mit dem System die Ziele erreicht werden können. Mit Hilfe der heuristischen Evaluation soll die Gebrauchstauglichkeit anhand der Heuristiken von Nielson ermittelt werden.\\
 
  
-\subsection{Papierprototypen und deren Designentscheidung} \label{chapt:paperproto}
+\subsection{Papierprototypen und deren Designentscheidung} \label{chapt:paperprotos}
+ 
+\subsubsection{Prototyp Vorschlag I} \label{chapt:paperprotoI}
 %TODO
 %Einleitung zu Prototypen Varianten
 In der ersten Variante wurde eine mobile Anwendung entwickelt, die über die Kamera des mobilen Gerätes mit dem Exponat interagiert. Mit Hilfe der Kamera kann das Exponat auf dem mobilen Gerät angesehen werden. Dabei werden zusätzlich auf dem Bildschirm  Informationen zu dem Exponat angezeigt. Nach dem Gesetz der Dialoggestaltung zur Selbstbeschreibungsfähigkeit soll der Nutzer durch die offene Kamera erkennen, das er das Objekt zu dem er Informationen haben möchte scannen muss. Die Steuerbarkeit ist hier gegeben, da der Nutzer mit der Kamera die volle Kontrolle über das Objekt besitzt, da das Objekt über die Kamera immer sichtbar ist, solange es gescannt wird. Abbildung \ref{fig:prototype} zeigt das gescannte Objekt auf dem mobilen Gerät mit spezifischen Informationen zu dem Objekt. Die Informationen zu dem Objekt sind an dem Objekt fest verankert, sodass sie beim Zoomen mit vergrößert werden und eine Zugehörigkeit zwischen Objekt und Information besteht.\\
@@ -306,6 +312,67 @@ Zur Umsetzung des Papierprototypen wurde beispielhaft der Archaeopteryx als Expo
 
 Der Papierprototyp wurde für den Use Case Informationen anzeigen entwickelt, das den Use Case Exponat zoomen inkludiert. Die Gestaltung und Anzahl der Dialoge wurde bewusst minimal gehalten, um die Konzentration auf die Informationen lenken zu können. Die Interaktionen sollten aus den Informationen selbst erkennbar sein und durch bekannte Interaktionen umsetzbar sein. Als bekannte Interaktion ist das Zoomen mit Hilfe von zwei Fingern, die auseinander bzw. zusammen gezogen werden möglich. Ebenfalls als bekannt vorausgesetzt, ist das Zurücksetzten der Skalierung über das doppelte Tippen auf das Display. Nach dem Öffnen der Anwendung öffnet sich die Kamera. Der Nutzer soll im weiteren Schritt die Kamera auf das Exponat richten, sodass Informationen angezeigt werden können. Sobald das Exponat von der Kamera erfasst wurde, werden zu diesem Exponat allgemeine Informationen angezeigt, durch die gescrollt werden können durch das Wischen nach Oben bzw. Unten. Am Ende können über einen Button spezielle Informationen, wie die Merkmale des Archeopteryx angezeigt werden.
 Für das Anzeigen von weiteren Informationen wird eine Slideshow umgesetzt. Die Benutzung der Slideshow erfolgt durch das Wischen nach Links und Rechts, wobei die Überschriften das Vorwissen des Nutzers anregen sollen, dass weitere Informationen durch das Wischen angezeigt werden können. Die Slideshow wurde nach den Grundsätzen der Dialoggestaltung nach der Erwartungskonformität gewählt. Die Slideshow dient zur Navigation, mit der sich mehrere Informationen zu einem Hintergrundbild, wie den Archeopteryx anzeigen lassen können.\\
+
+\subsubsection{Prototyp Vorschlag II} \label{chapt:paperprotoII}
+%TODO
+%Einleitung zu Prototypen Varianten
+In dieser zweiten Variante wurde eine mobile Anwendung entwickelt, die über die Kamera des mobilen AR-Gerätes mit dem Exponat interagiert. Mit Hilfe der Kamera kann das Exponat erfasst und die Ansicht um Informationen erweitert werden. Dabei werden zusätzlich auf dem Bildschirm  Informationen zu dem Exponat angezeigt. Nach dem Gesetz der Dialoggestaltung und dem Gesetz der Einfachheit zur Selbstbeschreibungsfähigkeit soll dem Nutzer durch aufsetzten der Brille erkennen, das er das Objekt zu dem er Informationen haben möchte Lediglich durch die Brille betrachten muss. Die Steuerbarkeit bezieht sich nur auf die Kopfhaltung und aus welcher Himmelsrichtung das Exponat betrachtet werden soll.. Abbildung \ref{fig:prototype_II} zeigt das Objekt durch die Brille erweitert mit spezifischen Informationen. Die  virtuellen Informationen zu dem Objekt sind um herum angelegt und können durch gescrollt oder geswitcht werden.  Die Gestaltung und Anzahl der angezeigten Informationen ist maximal minimalistisch Gehalten und soll dem Nutzer nicht auffallen. Das soll die Konzentration von der technischen Realisierung auf den entstehenden Komfort lenken. Eine Interaktion mit dem Exponat findet nicht direkt statt. Stattdessen soll der Text entsprechend der  vertikalen Kopfhaltung gescrollt werden.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=+90,scale=0.04]{proto_II}
+	\caption{Prototyp II}
+	\label{fig:prototype_II}
+\end{figure} 
+
+\begin{itemize}
+	\item Die Anwendung wird gestartet wenn die AR-Brille aus der Halterung genommen bzw. angeschaltet wird.
+	\subitem Das entsprechende Thema wurde vom Museum vorkonfiguriert und kann vom Benutzer nicht geändert werden. 
+	\item Wenn der Nutzer im Umkreis eines Exponates ist, wird über dieses via AR zusätzliche Informationen angezeigt.
+	\item Durch Heben oder Senken des Kopfes wird der eingeblendete Text gescrollt.
+	\subitem Bei frei stehenden Exponaten können die angezeigten Informationen in 4 Blöcke aufgeteilt werden, wobei jeder einer Himmelsrichtung zugewiesen wird.
+	\subitem Entsprechend der Ausrichtung des Users in Bezug auf die Himmelsrichtungen wird einer der 4 möglichen Informationsblöcke angezeigt.
+	\item In der oberen linken Ecke soll eine MiniMap mit Positions-Kursor angezeigt werden
+	\subitem die Karte soll halb transparent sein, um nicht zu aufdringlich zu wirken
+	\item Die Anwendung wird beendet wenn dass Museumsgelände verlassen, das Device ausgeschaltet oder in die dafür vorgesehen Halterung zurückgesetzt.
+	
+\end{itemize}
+
+\subsubsection{Prototyp Vorschlag III} \label{chapt:paperprotoIII}
+%TODO
+%Einleitung zu Prototypen Varianten
+In dieser zweiten Variante wurde eine mobile Anwendung entwickelt, die über die Kamera des mobilen AR-Gerätes mit dem leeren Podesten interagiert. Mit Hilfe der Kamera kann das Podest erfasst und die Ansicht um ein Exponat sowie zugehörigen Informationen erweitert werden. Dabei werden zusätzlich auf dem Bildschirm ein entsprechendes Exponat(3D-Modell) und Informationen zu dem Exponat angezeigt. Nach dem Gesetz der Dialoggestaltung und dem Gesetz der Einfachheit zur Selbstbeschreibungsfähigkeit soll dem Nutzer durch aufsetzten der Brille erkennen, das er das Objekt und Information durch Betrachten der dafür vorgesehenen Podeste erreicht. Die Steuerbarkeit bezieht sich nur auf die Kopfhaltung und aus welcher Himmelsrichtung das Exponat betrachtet werden soll.
+\\ Die Gestaltung und Anzahl der angezeigten Informationen ist maximal minimalistisch Gehalten und soll dem Nutzer nicht auffallen. Das soll die Konzentration von der technischen Realisierung auf den entstehenden Komfort lenken. Eine Interaktion mit dem Exponat findet nicht direkt statt. Stattdessen soll der Text entsprechend der  vertikalen Kopfhaltung gescrollt werden.
+\\ Abbildung \ref{fig:prototype_III} zeigt einen Papierprototypen für die Umsetzung dieses Konzeptes.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=0,scale=0.04]{paper_protoIII}
+	\caption{Ansicht Papierprototyp III}
+	\label{fig:prototype_III}
+\end{figure} 
+
+
+\begin{itemize}
+	\item Die Anwendung wird gestartet wenn die AR-Brille aus der Halterung genommen bzw. angeschaltet wird.
+	\subitem Das entsprechende Thema wurde vom Museum vorkonfiguriert und kann vom Benutzer nicht geändert werden. 
+	\item Wenn der Nutzer im Umkreis eines leeren Podestes steht und es anguckt, wird über dieses via AR ein Virtuelles Exponat erzeugt und mit den zusätzliche Informationen, angezeigt.\item Durch Heben oder Senken des Kopfes wird der eingeblendete Text gescrollt.
+	\subitem Bei frei stehenden Exponaten können die angezeigten Informationen in 4 Blöcke aufgeteilt werden, wobei jeder einer Himmelsrichtung zugewiesen wird.
+	\subitem Entsprechend der Ausrichtung des Users in Bezug auf die Himmelsrichtungen wird einer der 4 möglichen Informationsblöcke angezeigt.
+	\item In der oberen linken Ecke soll eine MiniMap mit Positions-Kursor angezeigt werden
+	\subitem die Karte soll halb transparent sein, um nicht zu aufdringlich zu wirken
+	\item Die Anwendung wird beendet wenn dass Museumsgelände verlassen, das Device ausgeschaltet oder in die dafür vorgesehen Halterung zurückgesetzt.
+	
+\end{itemize}
+
+Der Papierprototyp besteht aus einem Papiermodell einer Brille und ein-schiebbaren beschrifteten Papierstreifen um Inhalte wiederzugeben.
+Die ein-schiebbaren Inhalte besitzen in der Mitte eine 30\% Breite vertikale Aussparung um die Sicht auf das Objekt nicht völlig zu verdecken.
+Informationen werden durch ein Schiebesystem von oben nach unten eingeblendet. Die Ansichten sind auf einem fortlaufenden Papierstreifen notiert.
+Die Podeste werden werden durch einfach Blätter Papier am Boden dargestellt, beschwert mit einem Simulationsobjekt wie z.B. ein Stift.
+
+
+
+
 
 %TODO
 %Adrians Prototyp Beschreibung plus Bild und deren Designentscheidung Bezug nehmen zu Vorlesung
