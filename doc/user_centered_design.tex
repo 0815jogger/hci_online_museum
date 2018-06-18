@@ -30,6 +30,7 @@
 \usepackage{microtype}% verbesserter Randausgleich
 \usepackage[hidelinks]{hyperref}
 \usepackage{multirow}
+\usepackage{float}
 
 \usepackage{graphicx}
 \graphicspath{ {./img/} }
@@ -63,7 +64,7 @@
 		Adrian Franken (Matr.nr.:s0538115),\\
 		Chris-Andr\'{e} Posselt (Matr.nr.:s),\\
 		Elsa Buchholz (Matr.nr.:s0544180),\\ 
-		Igor Olegovich Turanin (Matr.nr.:s)
+		Igor Olegovich Turanin (Matr.nr.:s0549350)
 	   }
 
 %
@@ -187,7 +188,7 @@ In Form einer Diskussion haben die Teilnehmer die Kategorien eines virtuellen Mu
 
 \begin{table}
 \begin{tabular}{|c|c|}\hline
-	Kategorie							& Beurteilung\\ 
+	\textbf{Kategorie}							& \textbf{Beurteilung}\\ 
 										\hline
 	\multirow{2}*{Online-Museum}		& negativ bewertet,\\
 						  				& da viel verloren geht aus dem Museum \\  \hline 
@@ -224,7 +225,7 @@ Daraus lassen sich für die Entwicklung des Systems die in der Tabelle aufgefüh
 
 \begin{table}
 \begin{tabular}{|c|c|}\hline
-	Funktion									& 	Anforderung\\ \hline
+	\textbf{Funktion}									& 	\textbf{Anforderung}\\ \hline
 	
 \multirow{7}*{Präsentation von Informationen}	& Das System muss dem Nutzer \\
 												& die Möglichkeit bieten\\
@@ -260,7 +261,9 @@ Daraus lassen sich für die Entwicklung des Systems die in der Tabelle aufgefüh
 												& die Möglichkeit bieten\\
 												& 1. 3D-Objekte von den Exponaten zu sammeln\\
 												& 2. ein gemeinsames Erlebnis mit Freunden zu bieten.\\ \hline							
-\end{tabular}
+\end{tabular}\\
+\caption{Funktionen und Anforderungen an ein virtuelles Museum}
+\label{tab:funct}
 \end{table}
 
 
@@ -274,30 +277,43 @@ Daraus lassen sich für die Entwicklung des Systems die in der Tabelle aufgefüh
 
 %Das System soll spielerisch angewandt werden.
 
-Im nächsten Abschnitt wird beschrieben, wie die gewonnen Erkenntnisse über die Anforderungen eines virtuellen Museums in Form eines Papierprototypen umgesetzt werden.\\
+Im nächsten Abschnitt wird beschrieben, wie die gewonnen Erkenntnisse über die Anforderungen eines virtuellen Museums in Form eines Papierprototypen umgesetzt werden.
 
 \section{Prototyping: low fidelity}
-Für die Entwicklung des Papierprototypen wurde zur Umsetzung das Naturkunde Museum als Referenz gewählt. Weiterhin wurde die Darstellung der Objekte bzw. Exponate als 3D-Objekte umgesetzt.
-Allen Prototypen gemeinsam ist, dass aufgrund der Ergebnisse der Fokusgruppe die Prototypen als AR Anwendung umgesetzt wurden.\\
+Insgesamt wurden vier Prototypen entwickelt, die im Kapitel \nameref{chapt:paperproto} vorgestellt werden. Für die Umsetzung wurden Anwendungen für das Naturkunde Museum hergestellt. Aufgrund der Ergebnisse der Fokusgruppe sind vier sehr unterschiedliche Anwendungen entstanden. Zwei davon sind AR Anwendungen, die für die heuristische Evaluation verwendet wurden. Eine gute Gebrauchstauglichkeit ist gegeben, wenn mit dem System die Ziele erreicht werden können. Mit Hilfe der heuristischen Evaluation soll die Gebrauchstauglichkeit anhand der Heuristiken von Nielson ermittelt werden.\\
 
-Eine gute Gebrauchstauglichkeit ist gegeben, wenn mit dem System die Ziele erreicht werden können. Mit Hilfe der heuristischen Evaluation soll die Gebrauchstauglichkeit anhand der Heuristiken von Nielson ermittelt werden.\\
  
-\subsection{Papierprototypen und deren Designentscheidung}
-In der ersten Variante wurde eine mobile Applikation entwickelt, die über die Kamera des mobilen Gerätes mit dem Exponat interagiert. Mit Hilfe der Kamera kann das Exponat auf dem mobilen Gerät angesehen werden. Dabei werden zusätzlich auf dem Bildschirm  Informationen zu dem Exponat angezeigt. Nach dem Gesetz der Dailoggestaltung zur Selbstbeschreibungsfähigkeit soll der Nutzer durch die offene Kamera erkennen, das er das Objekt zu dem er Informationen haben möchte scannen muss. Ebenfalls die Steuerbarkeit ist hier gegeben, da der Nutzer mit der Kamera die volle Kontrolle über das Objekt besitzt. Die Informationen zu dem Objekt sind an dem Objekt fest verankert, sodass sie beim Zoomen mit vergrößert werden und eine Zugehörigkeit zwischen Obkjekt und Information besteht.\\
-
-Zur Umsetzung des Papierprototypen wurde beispielhaft der Archaeopteryx als Exponat gewählt. Mit der Applikation sollen folgende Szenarien möglich sein, die in dem Use-Case-Diagramm dargestellt sind.\\
-
-\includegraphics[scale=0.2]{use_c_museum}
-
-Der Papierprototyp wurde für den Use Case Informationen anzeigen entwickelt, das den Use Case Exponat zoomen inkludiert. Die Gestaltung und Anzahl der Dialoge wurde bewusst minimal gehalten, um die Konzentration auf die Informationen lenken zu können. Die Interaktionen sollten aus den Informationen selbst erkennbar sein und durch bekannte Interaktionen umsetzbar sein. Als bekannte Interaktion ist das Zoomen mit Hilfe von zwei Fingern, die auseinander bzw. zusammen gezogen werden möglich. Ebenfalls als bekannt vorausgesetzt, ist das Zurücksetzten der Skalierung über das doppelte Tippen auf das Display. Nach dem Öffnen der Applikation öffnet sich die Kamera. Der Nutzer soll im weiteren Schritt die Kamera auf das Exponat richten, sodass Informationen angezeigt werden können. Sobald das Exponat von der Kamera erfasst wurde, werden zu diesem Exponat allgemeine Informationen angezeigt, durch die gescrollt werden können durch das Wischen nach Oben bzw. Unten. Am Ende können über einen Button spezielle Informationen, wie die Merkmale des Archeopteryx angezeigt werden.
-Für das Anzeigen von weiteren Informationen wird eine Slideshow umgesetzt. Die Benutzung der Slideshow erfolgt durch das Wischen nach Links und Rechts, wobei die Überschriften das Vorwissen des Nutzers anregen sollen, dass weitere Informationen durch das Wischen angezeigt werden können. Die Slideshow wurde nach den Grundsätzen der Dialoggestaltung nach der Erwartungskonformität gewählt. Eine Slideshow dient zur Navigation, mit der sich mehrere Informationen zu einem Hintergrundbild anzeigen lassen können.\\
+\subsection{Papierprototypen und deren Designentscheidung} \label{chapt:paperproto}
 %TODO
-%Bilder hinzufügen und darauf beziehen und Vorlesungsinhalte; evtl. use case Leinwand bearbeiten beschreiben
+%Einleitung zu Prototypen Varianten
+In der ersten Variante wurde eine mobile Anwendung entwickelt, die über die Kamera des mobilen Gerätes mit dem Exponat interagiert. Mit Hilfe der Kamera kann das Exponat auf dem mobilen Gerät angesehen werden. Dabei werden zusätzlich auf dem Bildschirm  Informationen zu dem Exponat angezeigt. Nach dem Gesetz der Dialoggestaltung zur Selbstbeschreibungsfähigkeit soll der Nutzer durch die offene Kamera erkennen, das er das Objekt zu dem er Informationen haben möchte scannen muss. Die Steuerbarkeit ist hier gegeben, da der Nutzer mit der Kamera die volle Kontrolle über das Objekt besitzt, da das Objekt über die Kamera immer sichtbar ist, solange es gescannt wird. Abbildung \ref{fig:prototype} zeigt das gescannte Objekt auf dem mobilen Gerät mit spezifischen Informationen zu dem Objekt. Die Informationen zu dem Objekt sind an dem Objekt fest verankert, sodass sie beim Zoomen mit vergrößert werden und eine Zugehörigkeit zwischen Objekt und Information besteht.\\
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=-90,scale=0.04]{proto}
+	\caption{Mobile AR Anwendung}
+	\label{fig:prototype}
+\end{figure} 
+
+Zur Umsetzung des Papierprototypen wurde beispielhaft der Archaeopteryx als Exponat gewählt. Mit der Anwendung sollen folgende Szenarien möglich sein, die in Abbildung \ref{pict:use_case} dargestellt sind.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.15]{use_c_museum}
+	\caption{Use Case Diagramm: Mobile AR Anwendung}
+	\label{pict:use_case}
+\end{figure} 
+
+Der Papierprototyp wurde für den Use Case Informationen anzeigen entwickelt, das den Use Case Exponat zoomen inkludiert. Die Gestaltung und Anzahl der Dialoge wurde bewusst minimal gehalten, um die Konzentration auf die Informationen lenken zu können. Die Interaktionen sollten aus den Informationen selbst erkennbar sein und durch bekannte Interaktionen umsetzbar sein. Als bekannte Interaktion ist das Zoomen mit Hilfe von zwei Fingern, die auseinander bzw. zusammen gezogen werden möglich. Ebenfalls als bekannt vorausgesetzt, ist das Zurücksetzten der Skalierung über das doppelte Tippen auf das Display. Nach dem Öffnen der Anwendung öffnet sich die Kamera. Der Nutzer soll im weiteren Schritt die Kamera auf das Exponat richten, sodass Informationen angezeigt werden können. Sobald das Exponat von der Kamera erfasst wurde, werden zu diesem Exponat allgemeine Informationen angezeigt, durch die gescrollt werden können durch das Wischen nach Oben bzw. Unten. Am Ende können über einen Button spezielle Informationen, wie die Merkmale des Archeopteryx angezeigt werden.
+Für das Anzeigen von weiteren Informationen wird eine Slideshow umgesetzt. Die Benutzung der Slideshow erfolgt durch das Wischen nach Links und Rechts, wobei die Überschriften das Vorwissen des Nutzers anregen sollen, dass weitere Informationen durch das Wischen angezeigt werden können. Die Slideshow wurde nach den Grundsätzen der Dialoggestaltung nach der Erwartungskonformität gewählt. Die Slideshow dient zur Navigation, mit der sich mehrere Informationen zu einem Hintergrundbild, wie den Archeopteryx anzeigen lassen können.\\
+
+%TODO
+%Adrians Prototyp Beschreibung plus Bild und deren Designentscheidung Bezug nehmen zu Vorlesung
+%Zwei weitere Prototypen beschreiben und deren Designentscheidung Bezug nehmen zu Vorlesung; evtl zu jedem Prototyp ein Bild
 %Nach den Grundsätzen der Dialoggestaltung
 %Erwartungskonformität: Slideshow zur Navigation zu weiteren Informationen. Anzeige Punkte, die farblich hervorgehoben werden als Ankerpunkt. Wischen für weitere Informationen andere Ansicht. Scrollen Anzeige Scrollbar rechts. 
 
-%Steuerbarkeit: Nutzer hat die Kontrolle, durch Kamera. Objekt immer sichtbar. Informationen sind fest an Objekt verankert. Auch bei Zoomfunktion.
+%Steuerbarkeit: 
 
 %Selbstbeschreibungsfähig: App öffnet sich Kamera ist sofort an. Erklärt sich selbst, das auf Objekt gehalten werden muss, da Kamera an ist.
 
@@ -308,36 +324,72 @@ Für das Anzeigen von weiteren Informationen wird eine Slideshow umgesetzt. Die 
 %Gesetz der Einfachheit:
 
 \subsection{Heuristische Evaluation}
-Die heuristische Evaluation wurde an der mobilen Applikation zum Anzeigen von Informationen und der Applikation zum Anzeigen von Exponaten als 3D-Objekt mit Hilfe eines Tangible Interface vollzogen. Um Usability Probleme zu entdecken, wurden die Heuristiken von Nielson verwendet. Damit lassen sich Eigenschaften des Systems herausfinden, die erfüllt sein müssen, damit die Interaktion für den Nutzer gebrauchstauglich sind.
-In Tabelle xy werden die Ergebnisse der heuristischen Analyse der mobilen Applikation zusammengefasst.\\
+Die heuristische Evaluation wurde an der mobilen Anwendung zum Anzeigen von Informationen und der Anwendung zum Anzeigen von Exponaten als 3D-Objekt mit Hilfe eines Tangible Interface vollzogen. Um Usability Probleme zu entdecken, wurden die Heuristiken von Nielson verwendet. Damit lassen sich Eigenschaften des Systems herausfinden, die erfüllt sein müssen, damit die Interaktion für den Nutzer gebrauchstauglich sind.
+Tabelle \ref{tab:heur_1} werden die Ergebnisse der heuristischen Analyse der mobilen Anwendung zusammengefasst.
 
 \begin{table}
 	\begin{tabular}{|c|c|c|c|}\hline
-		Dialog 				& Erwartung					& Lösungsvorschlag& Heuristik\\\hline
+		\textbf{Dialog}		& \textbf{Erwartung}		&\textbf{Lösungsvorschlag}  & \textbf{Heuristik}\\
+		\hline
 		
-		Allg. Information	&  	\multirow{5}*{automatisches Scrollen} 	& Scrollbar einfügen\\
-																	 	& zur Erkennung der \\
-																		 &Interaktionsmöglichkeit\\
-																		 &Umsetzen einer\\
-																		&automatischen Wiedergabe\\ & Sichtbarkeit des Systemstatus\\\hline
-		Zoomen & \multirow{3}*{Zoomen durch herangehen} & Info anzeigen\\
-														& wie das Zoomen\\
-														& funktioniert\\ & Übereinstimmung zwischen dem System und der realen Welt\\\hline
-		Wischen & \multirow{5}*{Wischen nicht erkannt} 	& Einfügen von \\
-														& Punkten zur Anzeige\\
-														& von Anzahl der Slides\\ Benutzerkontrolle, Hilfe und Dokumentation\\\hline					
-	\end{tabular}
+							&  	\multirow{6}*{automatisches Scrollen} 	& Scrollbar einfügen &  \\
+							
+							& 											& zur Erkennung der	 & \\ 
+							
+		Allg. Information	& 										&Interaktionsmöglichkeit;&Sichtbarkeit\\
+		
+		anzeigen			&									&Umsetzen einer			&des Systemstatus\\
+		
+							& 											&automatischen 			&\\
+							
+							& 											& Wiedergabe			&\\
+		\hline
+		
+							& \multirow{3}*{herangehen} 			& Info anzeigen 	&Übereinstimmung  \\
+							
+			Zoomen 			& 								& wie das Zoomen		&zwischen dem System\\
+			
+							& 								&funktioniert           & und der realen Welt\\
+		\hline
+		
+				 			& \multirow{3}*{nicht erkannt} 	& Einfügen von			& Benutzerkontrolle, \\
+				 			
+		Wischen				& 											&Punkten zur Anzeige	& Hilfe und\\
+		
+							& 										&von Anzahl der Slides  & Dokumentation\\
+		\hline		
+					
+	\end{tabular}\\
+\caption{Ergebnisse heuristische Evaluation: mobile AR Anwendung}
+\label{tab:heur_1}
 \end{table}
 
 Die Erwartung, das die allgemeinen Informationen automatisches gescrollt werden, beruht darauf, dass das System keine Rückmeldung über den Status zurückgegeben hat. Durch Einfügen einer Scrollbar wird dem Nutzer angezeigt, dass der Text nach unten hin bewegbar ist. Über die Größe des Rechtecks in der Scrollbar wird die aktuelle Position im Text angezeigt und ein Gefühl für die Länge des Textes gegeben.\\
 
 Das System spricht nicht die Sprache des Nutzers beim Verwenden des Zoommechanismus. Durch die Verwendung der AR-Technologie hat der Nutzer das Gefühl, dass die Interaktion mit dem Objekt genauso funktioniert wie im reelen Leben. Dadurch wird erwartet, dass durch herangehen an das Exponat ein Zoomen möglich ist. Durch hinzufügen einer Informationshilfe wie das Zoomen anzuwenden ist, könnte der Nutzer die Interaktion lernen. Allerdings würde das der Heuristik von Nielson wiedersprechen, dass das System ohne Hilfe auskommen muss.\\
 
-Das nicht erkennen der Funktion Wischen zum Anzeigen von weiteren Informationen lässt den Nutzer in eine Situation geraten aus die er nicht wieder zurück findet. Das wurde anhand der Heuristik Benutzerkontrolle festgestellt. Um die Funktion deutlich zu machen, am unteren Rand kleine Kreise dargestellt, die für jeweils eine Seite stehen. Die Kreise werden zusammen nebeneinander in gleichmäßigen Abstand dargestellt, wobei der Kreis farbig dargestellt wird, der die Seite repräsentiert, die gerade angezeigt wird. Durch Wischen wird die nächste Seite angezeigt und der entsprechende Kreis farbig dargestellt. Eine direkte Auswahl der Seite, die angezeigt werden soll, kann durch das Tippen auf den Kreis vollzogen werden.\\
+Das nicht erkennen der Funktion Wischen zum Anzeigen von weiteren Informationen lässt den Nutzer in eine Situation geraten aus die er nicht wieder zurück findet. Das wurde anhand der Heuristik Benutzerkontrolle festgestellt. Um die Funktion deutlich zu machen, am unteren Rand kleine Kreise dargestellt, die für jeweils eine Seite stehen. Die Kreise werden zusammen nebeneinander in gleichmäßigen Abstand positioniert, wobei der Kreis farbig dargestellt wird, der die Seite repräsentiert, die gerade angezeigt wird. Durch Wischen wird die nächste Seite angezeigt und der entsprechende Kreis farbig dargestellt. Eine direkte Auswahl der Seite, die angezeigt werden soll, kann durch das Tippen auf den Kreis vollzogen werden.\\
+
+%TODO
+%Adrians Ergebnisse der heuristischen Analyse  hier einfügen
 
 \subsection{Fazit}
 %fazit bezüglich der im digitalen Prototypen umzusetztenden Features
+Nach der Durchführung der heuristischen Evaluation, entstand die Idee, die Funktionen  der mobilen AR Anwendung wie Zoomen, Scrollen, Drehen und Informationen anzeigen eines Objektes auf das Tangible Interface anzuwenden. Somit soll eine Anwendung zum Interagieren mit einem Exponat über ein Tangible Interface entstehen. Die Anwendung soll in zwei Modi verwendet werden können, die über einen Knopf gewechselt werden können. Im ersten Modus kann das Exponat angesehen, gedreht und vergrößert werden, im zweiten Modus können sich Informationen zu dem Exponat angezeigt werden lassen. Folgende Feature werden dafür umgesetzt:
 
+\begin{itemize}
+	\item Die Anwendung wird gestartet, wenn das Tangible Interface aus der Halterung am Terminal genommen wird.
+	\item Beim Starten der Anwendung wird der Modus zum Interagieren geöffnet.
+	\item Als Nutzer möchte ich das Exponat vergrößern, durch  Drücken des Tangible Interfaces. Dabei soll je nach Kraftaufwand eine entsprechende Skalierung stattfinden. 
+	\item Als Nutzer möchte ich das Exponat drehen können, durch vertikales und horizontales Drehen des Tangible Interfaces.
+	\item Als Nutzer möchte ich Informationen zu einem Exponat angezeigt bekommen, wenn ich den Informations-Knopf am Tangible Interface drücke.
+	\item Als Nutzer möchte ich den Informationstext scrollen, durch vertikales Drehen des Tangible Interfaces.
+	\item Als Nutzer möchte ich weitere Informationen anzeigen, durch horizontales Drehen des Tangible Interfaces.
+	\item Als Nutzer möchte ich die angezeigten Informationen zu einem Exponat durch Drücken des Informations-Knopfes am Tangible Interface ausblenden.
+	\item Die Anwendung wird durch Zurücklegen des Tangible Interfaces in das Terminal beendet.
+	Wenn die Anwendung beendet wird, wird das Exponat ohne Zoom und Informationen angezeigt in einem voreingestellten Skalierungsmodus.
+	
+\end{itemize}
 
 \section{Prototyping: high fidelity}
 \subsection{Umsetzung des Papierprototypen}
