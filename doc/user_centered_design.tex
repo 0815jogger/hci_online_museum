@@ -390,7 +390,9 @@ Die Podeste werden werden durch einfach Blätter Papier am Boden dargestellt, be
 
 %Gesetz der Einfachheit:
 
-In der zweiten Variante der Papierprototypen wurde als zentrales Element ein tangible Interface verwendet. Zusätzlich zu dem TI, gibt es eine AR Brille mit einem Exponat und einem QR-Code. Die Brille ist in der Lage den QR-Code zu scannen um das Exponat virtuell auf der AR-Brille anzuzeigen. Das TI ist ein Kugelförmiges Gerät mit diversen verbauten Sensoren. Diese sind ein Gyrosensor, ein Beschleunigungssensor und ein Drucksensor.
+\subsubsection{Prototyp Vorschlag IIII} \label{chapt:paperprotoIIII}
+
+In dieser Variante der Papierprototypen wurde als zentrales Element ein tangible Interface verwendet. Zusätzlich zu dem TI, gibt es eine AR Brille, ein Exponat und einen QR-Code. Die Brille ist in der Lage den QR-Code zu scannen um das Exponat virtuell auf der AR-Brille anzuzeigen. Das TI ist ein Kugelförmiges Gerät mit diversen verbauten Sensoren. Diese sind ein Gyrosensor, ein Beschleunigungssensor und ein Drucksensor. Der Gyrosensor dient zur Bestimmung der Rotation des TI wohingegen der Beschleunigungssensor eine Schüttel-Geste ermöglicht. Der Drucksensor ermöglicht das drücken des Interfaces und erlaubt ein weiteres Element im Mapping der Steuerung.
 
 \begin{figure}[H]
 	\centering
@@ -399,7 +401,21 @@ In der zweiten Variante der Papierprototypen wurde als zentrales Element ein tan
 	\label{fig:prototype2}
 \end{figure}
 
-Diser Usecase vernachlässigt hauptsächlich den informativen Teil wohin gegen die Userexperience im Vordergrund stehen soll.
+Dieser Usecase vernachlässigt hauptsächlich den informativen Teil wohin gegen die Userexperience im Vordergrund stehen soll.
+
+\begin{itemize}
+	\item Sobald die AR-Brille aufgesetzt und eingeschaltet wurde, ist diese in der Lage einen QR-Code zu scannen.
+	\subitem Der Nutzer muss sich lediglich vor dem QR-Code eines Exponates stellen und diesen anschauen. 
+	\item Nun wird durch einen hörbaren positiv klingenden Ton das erfolgreiche scannen des Codes vermittelt.
+	\item Das virtuelle Objekt wird nun vor den Augen des Nutzers angezeigt.
+	\subitem Das virtuelle Objekt wird, unabhängig von der Kopfposition, immer vor den Augen des Nutzers dargestellt.
+	\subitem Dadurch kann der Nutzer das Objekt nicht verlieren
+	\item Der Nutzer hält nun das Tangible Interface in seiner Hand
+	\subitem durch drehen, drücken und schütteln ist nun möglich mit dem virtuellen Objekt zu interagieren
+	\item schüttelt der Nutzer das TI wird das Objekt nun wieder entfernt.
+	\item durch ausschalten oder absetzen der Brille kann der Nutzer das Programm beenden.
+\end{itemize}
+
 
 \subsection{Heuristische Evaluation}
 Die heuristische Evaluation wurde an der mobilen Anwendung zum Anzeigen von Informationen und der Anwendung zum Anzeigen von Exponaten als 3D-Objekt mit Hilfe eines Tangible Interface vollzogen. Um Usability Probleme zu entdecken, wurden die Heuristiken von Nielson verwendet. Damit lassen sich Eigenschaften des Systems herausfinden, die erfüllt sein müssen, damit die Interaktion für den Nutzer gebrauchstauglich sind.
