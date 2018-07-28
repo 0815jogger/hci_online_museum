@@ -483,6 +483,68 @@ In der Bedienung des TIs ist die Funktion des Zooms durch festes Drücken kritis
 \section{Evaluation}
 Bei der Evaluation wurden die Bögen für den Isometric und den NasaTLX gewählt. Aufgrund der hohen Zuverlässigkeit des Isometric und der hohe Verwendungsgrad des NasaTLX in HCI Studien, viel die Wahl auf diese beiden Evaluationsbägen.\\
 
+\subsection{Evaluationsziele}
+Das Hauptziel dieser Evaluation ist, es anhand des Prototypens das allgemeine Verständnis und Akzeptanz des Steuerungskonzeptes bei diesbezüglich ungeschulten Probanden zu ermitteln.
+Ebenso soll die die Qualität der Nutzererfahrung ermittelt werden. Vorallem im Zusammenspiel mit dem Tangible Interface ist es wollen wir wissen ob das TI dem Nutzer einen Mehrwert bringt.
+Die Ziele werden im gesamten durch folgende Erfolgsindikatoren ermittelt.
+\begin{itemize}  
+	\item ISONORM 9241/10
+	 \begin{itemize}
+	 	\item Aufgabenangemessenheit
+	 	\item Steuerbarkeit
+	 	\item Fehlertoleranz
+	 	\item Lernförderlichkeit
+	 	\item Individualisierbarkeit
+	 	\item Erwartungskonformität
+	 	\item Selbstbeschreibungsfähigkeit  
+	 \end{itemize}
+	\item IsoMetrics
+	\begin{itemize}
+		\item Aufgabenangemessenheit
+		\item Selbstbeschreibungsfähigkeit
+		\item Steuerbarkeit
+		\item Erwartungskonformität
+		\item Fehlerrobustheit
+		\item Individualisierbarkeit
+		\item Erlernbarkeit
+	\end{itemize}
+	\item NasaTLX \ldots 
+	\item AttrakDiff 
+\end{itemize}
+
+\subsection{Der Prototyp}
+Der Zweck des Prototyps ist die Simulation einer Benutzersteuerung via TI. Da dies der erste Prototyp ist, wird auf ein echte TI verzichtet und der Ablauf in einem Klick-Prototypen simuliert. Die Simulation erfolgt durch die Verwendung eines Kontroll-Panels mit Buttons als Ersatz für die ausführbaren Events mit dem TI. So stehen klassische Pfeilbuttons für die Rotation der entsprechenden Objektachse des TI zur Verfügung. Es gibt einen Button für das Drücken des TI sowie einen Button für das Schütteln des TI.
+Mit diesen Events werden, abhängig vom jeweiligen Modus zum Teil unterschiedliche Steuerungsalgorithmen ausgelöst.
+\subsubsection{Steuerung und Modi}
+Die Funktion „Schütteln“ führt immer zu einem Wechsel in dem jeweils anderen Modus. Dabei wird das Objekt in den De fault-Zustand zurückgesetzt.
+
+Im Modus „Entdecken“ kann ein 3D-Objekt betrachtet, gedreht und gezoomt werden. Für das Rotieren des Objektes müssen die Pfeilbuttons verwendet werden. Es wurden nur die jeweiligen Dimensionen umgesetzt. So kann aus einer horizontalen Drehung heraus keine vertikale Drehung ausgeführt werden und umgekehrt. Das Zoomen erfolgt Stufenweise in einer Endlosschleife und wird durch den Button für Drücken ausgelöst.
+
+Im Modus „Lernen/Information“ können Informationslayer auf einem Objekt betrachtet werden, welche via Text Informationen zur Verfügung stellen. Für das Wechseln zwischen den Informationslayern des Objektes müssen die Pfeilbuttons verwendet werden. Es wurden nur der horizontale Wechsel umgesetzt.
+Das Zoomen erfolgt Stufenweise in einer Endlosschleife und wird durch den Button für Drücken ausgelöst. Beim Zoomen wird auf eine Ebene tiefer mit weitere Informationslayer innerhalb des ausgewählten Layers gewechselt.
+Es wurde nur ein mehrfach Zoom für den Layer „Europa“ implementiert.
+\subsubsection{Zielfunktionen und Aufgaben an Probanden}
+Die Probanden sollen im Verlauf des Testes folgende Funktionen ausführen
+	\begin{itemize}
+	\item Horizontales rotieren des Objektes im Modus „Endecken“ um 360°
+	\begin{itemize}
+		\item links herum
+		\item rechts herum
+	\end{itemize}
+	\item Vertikales rotieren des Objektes im Modus „Endecken“ um 360°
+	\begin{itemize}
+		\item oben herum
+		\item unten herum
+	\end{itemize}
+	\item Testen aller Zoom stufen im Modus „Endecken“
+	• Wechsel zum Modus „Lernen/Information“
+	\item Horizontaler Wechsel zwischen den Informationslayern auf der gleichen Ebene im Modus „Lernen/Information“
+	\begin{itemize}
+		\item 360
+	\end{itemize}
+	\item Auffinden aller Informationslayer im Rahmen der Zoomfunktion im Modus „Lernen/Information“
+	\item Wechsel zum Modus „Entdecken“
+\end{itemize}
 \subsection{Evaluationsauswertung}
 Die Ergebnisse nach der Auswertung der Evaluationsbögen mittels gegebener Exceltabellen und Diagramme, werden in den folgenden Bildern deutlich. Eine Erläuterung erfolgt danach.
 
@@ -511,8 +573,8 @@ Als nächstes ist das Diagram zu den gemittelten Werten angegeben
 Und zuletzt die Auswertung als Diagramm aus dem NasaTLX Auswertungsbogen.
 
 
-\subsection{AttrakDiff}
-Mit dem AttrakDiff Fragebogen wurde die Beurteiling der Interaktionstechnik durchgeführt. Es wurde ebenso versucht die Qualität der Nutzererfahrung zu ermitteln. Vorallem war hier vordergründig die Nutzererfahrung im Zusammenspiel mit dem Tangible Interface interessant und ob das TI dem Nutzer einen Mehrwert bringt.
+\subsubsection{AttrakDiff}
+Mit dem AttrakDiff Fragebogen wurde die Beurteilung der Interaktionstechnik durchgeführt. Es wurde ebenso versucht die Qualität der Nutzererfahrung zu ermitteln. Vorallem war hier vordergründig die Nutzererfahrung im Zusammenspiel mit dem Tangible Interface interessant und ob das TI dem Nutzer einen Mehrwert bringt.
 
 \begin{figure}[H]
 	\centering
@@ -529,7 +591,7 @@ Bei dem Profil der Wortpaare sind die Extremwerte besonders interessant, da sie 
 	\label{fig:result5}
 \end{figure}
 
-Nach erstmaligem betrachten der Auswertung zeigt sich ein eher verhaltenes Ergebnis. Es lässt rückschlüsse darauf ziehen, dass die Anwendung einen eher schlechten Eindruck auf die Testperson macht. Die Pragamtische Qualität liegt bei 0,86 welche die einzige Positive Kennzahl ausmacht. Die weiteren Kennzahlen der Hedonistischen Qualität sowie der Attraktivität liegen im negativen Bereich. Dadurch wird deutlich, dass die Anwendung den Nutzer eher abschreckt und ihm das Gefühl vermittelt die Anwendung nicht gebrauchen zu können.
+Nach erstmaligem betrachten der Auswertung zeigt sich ein eher verhaltenes Ergebnis. Es lässt Rückschlüsse darauf ziehen, dass die Anwendung einen eher schlechten Eindruck auf die Testperson macht. Die Pragmatische Qualität liegt bei 0,86 welche die einzige Positive Kennzahl ausmacht. Die weiteren Kennzahlen der Hedonistischen Qualität sowie der Attraktivität liegen im negativen Bereich. Dadurch wird deutlich, dass die Anwendung den Nutzer eher abschreckt und ihm das Gefühl vermittelt die Anwendung nicht gebrauchen zu können.
 
 \begin{figure}[H]
 	\centering
@@ -547,7 +609,7 @@ Die Portfoliodarstellung zeigt deutlich, dass die Anwendung nicht in den neutral
 %- Führen Sie eine statistsiche Auswertung mittels deskriptive Verfahren aus und diskutieren Sie diese (mindestens zentrale Tendenz und Variabilität). Stellen Sie die Ergebnisse grafisch dar.\\
 
 
-\subsection{Resultat}
+\subsubsection{Resultat}
 Nach kritischer Betrachtung der Ergebnisse, scheint die Anwendung insgesamt mangelhaft. Der Nutzer ist nicht überzeugt vom Konzept und der Umsetzung. Somit benötigt die Anwendung wie auch die Idee eine grundlegende Änderung des Konzeptes und eine wesentlich konsequentere Umsetzung in der Implementierung. Die Projektidee für sich beinhaltet gutes Potential. Wenn das Tangible Interface auch physisch vorhanden ist und in einem klickbaren Dummy oder in einer ersten prototypischen Anwendung einsatz findet, ist es auch möglich detailliertere Informationen zu dem Nutzen und der Nutzererfahrung zu erhalten. In diesem Stadium ist somit nicht möglich verwertbare oder hochwertige Informationen zu erhalten.
 
 
