@@ -350,7 +350,7 @@ In dieser Variante der Papierprototypen wurde als zentrales Element ein TI verwe
 	\label{fig:prototype2}
 \end{figure}
 
-Das TI ist ein kugelförmiges Gerät mit drei Sensoren. Die Form des TI hat einen hohen Aufforderungscharkter. Das TI soll in die Hand genommen werden, um mit dem Exponat interagieren und das Exponat bewegen zu können. Als Sensoren sind ein Gyrosensor, ein Beschleunigungssensor und ein Drucksensor in der Kugel verbaut. Der Gyrosensor dient zur Bestimmung der Rotation des TI, wohingegen der Beschleunigungssensor eine Schüttelgeste ermöglicht. Der Drucksensor ermöglicht das Drücken des Interfaces. Die drei Sensoren ermöglichen die Steuerung des Exponates, auf die mehrere Funktionen gemappt werden können. Als Funktionen sind das Schütteln zum Beenden der Darstellung des Exponats, das Drehen zum Rotieren und das Drücken zum Zoomen des Exponates gemappt. Das Exponat kann durch einmaliges Drücken hineingezoomt und durch zweimaliges Drücken wieder zurück skaliert werden.\\ 
+Das TI ist ein kugelförmiges Gerät mit drei Sensoren. Die Form des TI hat einen hohen Aufforderungscharakter. Das TI soll in die Hand genommen werden, um mit dem Exponat interagieren und das Exponat bewegen zu können. Als Sensoren sind ein Gyrosensor, ein Beschleunigungssensor und ein Drucksensor in der Kugel verbaut. Der Gyrosensor dient zur Bestimmung der Rotation des TI, wohingegen der Beschleunigungssensor eine Schüttelgeste ermöglicht. Der Drucksensor ermöglicht das Drücken des Interfaces. Die drei Sensoren ermöglichen die Steuerung des Exponates, auf die mehrere Funktionen gemappt werden können. Als Funktionen sind das Schütteln zum Beenden der Darstellung des Exponats, das Drehen zum Rotieren und das Drücken zum Zoomen des Exponates gemappt. Das Exponat kann durch einmaliges Drücken hineingezoomt und durch zweimaliges Drücken wieder zurück skaliert werden.\\ 
 
 Im Vordergrund steht die User Experience, wobei der Nutzer über das TI die Lust am Entdecken des Exponates entwickeln soll. Um dieser Anforderung entsprechen zu können, wurde der Anwendungsfall für die heuristische Analyse auf das Bewegen und Erkunden des Exponats gewählt. Weitere Anwendungsfälle sind das Abspielen eines Videos und das Anzeigen von Informationen zum Exponat.\\
 
@@ -481,11 +481,22 @@ Daraus ergeben sich folgende zwei Aufgaben für den Nutzer:
 In der Bedienung des TIs ist die Funktion des Zooms durch festes Drücken kritisch zu sehen. Da das Interface gehalten werden muss, um den entsprechenden Zoommodus beizubehalten, ist das Entdecken erschwert. Eine Variante ist das TI so zu gestalten, dass es seine Form beibehalten kann und der Zoommodus fixiert ist.\\
 
 \section{Evaluation}
-Bei der Evaluation wurden die Bögen für den Isometric und den NasaTLX gewählt. Aufgrund der hohen Zuverlässigkeit des Isometric und der hohe Verwendungsgrad des NasaTLX in HCI Studien, viel die Wahl auf diese beiden Evaluationsbägen.\\
+Die Evaluation wurde extern durchgeführt und bedient sich der Methodik der „Qualitativen Datenerhebung“ in Bezug auf die Verwendung eines ersten Prototypens sowie der Methodik der „Quantitativen Datenerhebung“ durch den Einbezug von Projekt internen allgemeinen Rücksprachen mit Teammitgliedern und Kommilitonen. Die Testgruppe setzte sich aus IT-Fachleuten und Verwaltungsangestellten zusammen. Keine der Testpersonen hatte zuvor etwas mit unserem Projekt oder dem zu testenden Prototypen zu tun oder kann als professioneller Produkt-Tester betrachtet werden.
+
+Bei der Evaluation wurden die Bögen für den Isometric und den NasaTLX gewählt. Aufgrund der hohen Zuverlässigkeit des Isometric und der hohe Verwendungsgrad des NasaTLX in HCI Studien, viel die Wahl auf diese beiden Evaluationsbögen.\\
+
+\subsection{Einleitung}
+Mit dem Projekt «Interaktives Museum» setzt sich unsere Projektgruppe zum Ziel, die Steuerungsmanagement von digitalen Exponaten in einer Virtuellen Umgebung hinsichtlich der Mensch-Maschine-Kommunikation zu verbessern.
+Zu diesem Zweck richtet sich die Arbeit auf die Entwicklung eines theoretisch geplanten physischen Eingabegerätes, nachfolgend als „tangible interface“ oder TI genannt und die steuer-technische Übersetzung der haptischen Eingaben des Nutzers in eine digitale Steuerung innerhalb des VR-Systems.
+
+Dazu wurde ein erster Klick-Prototyp entwickelt, um haptische User Eingaben zu simulieren und damit das Steuerungskonzept anhand eines Beispieldatensatzes hinsichtlich nachfolgender SMART-Ziele evaluieren zu können.
+
+\subsection{Der Adressat}
+Adressat der Evaluation sind zunächst die externe Personen wie Kollegen und  Bekannte. Diese sollen nachfolgende Ziele evaluieren. So z.B. ob die Steuerung von Exponaten und Informationen hinsichtlich des körperlichen Aufwandes und unter Partizipierung natürlicher Bewegungsmuster als leicht und eingänglich empfunden wird.
 
 \subsection{Evaluationsziele}
 Das Hauptziel dieser Evaluation ist, es anhand des Prototypens das allgemeine Verständnis und Akzeptanz des Steuerungskonzeptes bei diesbezüglich ungeschulten Probanden zu ermitteln.
-Ebenso soll die die Qualität der Nutzererfahrung ermittelt werden. Vorallem im Zusammenspiel mit dem Tangible Interface ist es wollen wir wissen ob das TI dem Nutzer einen Mehrwert bringt.
+Ebenso soll die die Qualität der Nutzererfahrung ermittelt werden. Vorallem im Zusammenspiel mit dem Tangible Interface wollen wir evaluieren, ob das TI dem Nutzer einen Mehrwert bringt.
 Die Ziele werden im gesamten durch folgende Erfolgsindikatoren ermittelt.
 \begin{itemize}  
 	\item ISONORM 9241/10
@@ -508,39 +519,55 @@ Die Ziele werden im gesamten durch folgende Erfolgsindikatoren ermittelt.
 		\item Individualisierbarkeit
 		\item Erlernbarkeit
 	\end{itemize}
-	\item NasaTLX \ldots 
+	\item NasaTLX 
 	\item AttrakDiff 
 \end{itemize}
-
-\subsection{Der Prototyp}
+\subsection{Aspekte}
+\subsubsection{Aktivitäten, Resultate, Leistungen, Reaktionen}
+Im Laufe der Projektentwicklung wurden diverse Schritte unternommen, um einen ersten Prototypen zu entwickeln, welcher für eine Evaluation eingesetzt werden kann.
+Als Erstes wurden Ideen zusammen getragen und ersten Testpersonen vorgestellt und besprochen. In diesem Gespräch wurden die Probanden nach Vorlieben und Erfahrungen im Rahmen eines Museumsbesuchs befragt.
+Beeinflusst durch die anschließende Auswertung der Befragung wurden unabhängige Konzepte entwickelt und in Konzeptzeichnungen sowie Papierprototypen realisiert.
+Es folgte eine öffentliche Präsentation der einzelnen Konzeptideen und eine anschließende Auswertung durch das Publikum.
+Auf Basis der neuen Auswertung wurde daraufhin ein einheitliches Konzept entwickelt und in der Projektdokumentation beschrieben. Des Weiteren wurde ein Klick-Prototyp entwickelt, welcher das erdachte Steuerungskonzept durch Simulation praktisch verwendbar und erfahrbar macht.
+\subsubsection{Auswirkungen und Veränderungen}
+Wir bekamen Schwierigkeiten bei der Umsetzung unseres Steuerungskonzeptes, da uns das TI fehlte, die Umgebung 3D-Objekte verwendet und der Prototyp auf Webbasis funktioniert. Aufgrund von Zeitmangel wurden nur sehr eingeschränkte Steuerungsmöglichkeiten implementiert, welche die grundsätzlichen Steuerungsdimensionen abbildet. Bei 3D-Objekten mit freier Steuerung ist die Permutation von abzubildenden Objektzuständen viel zu hoch. Abhilfe würde hier eine WebGl basierte in Echtzeit gerenderte selbst entwickelte 3D-Szenerie schaffen. Das Steuerungssimulationsinterface würde dann mit der 3D-Steuerung des Objektes programmatisch verbunden. Als Auswirkung müssen wir feststellen, dass eine weitere Evaluation mit den gleichen Zielen durchgeführt werden müsste, dieses mal mit einer in Echtzeit gerenderten 3D-Umgebung. Das sollte das Steuerungskonzept für den Nutzer weniger abstrakt erscheinen lassen. Diese erneute Evaluation sollte auf jeden Fall noch vor der Implementierung eines weiteren Prototypen auf der Basis eines echten TI erfolgen.
+\subsubsection{Empfehlung}
+In zukünftigen Projekten mit einer 3D-Technologie sollte unbedingt der benötigte Mehraufwand für die Entwicklung eines adäquaten Prototypen berücksichtigt werden. Die Implementation einer überzeugenden 3D-Umgebung ist selbst mit Frameworks wie Three.js non-trivial. Des weiteren kann auf die Entwicklung eines reinen Klick-Prototypen verzichtet werden, da ein Prototyp mit 3D-Technologie seine Aufgaben übernimmt. 
+\subsubsection{Steuerung und Modi}
 Der Zweck des Prototyps ist die Simulation einer Benutzersteuerung via TI. Da dies der erste Prototyp ist, wird auf ein echte TI verzichtet und der Ablauf in einem Klick-Prototypen simuliert. Die Simulation erfolgt durch die Verwendung eines Kontroll-Panels mit Buttons als Ersatz für die ausführbaren Events mit dem TI. So stehen klassische Pfeilbuttons für die Rotation der entsprechenden Objektachse des TI zur Verfügung. Es gibt einen Button für das Drücken des TI sowie einen Button für das Schütteln des TI.
 Mit diesen Events werden, abhängig vom jeweiligen Modus zum Teil unterschiedliche Steuerungsalgorithmen ausgelöst.
-\subsubsection{Steuerung und Modi}
 Die Funktion „Schütteln“ führt immer zu einem Wechsel in dem jeweils anderen Modus. Dabei wird das Objekt in den De fault-Zustand zurückgesetzt.
-
+\\
 Im Modus „Entdecken“ kann ein 3D-Objekt betrachtet, gedreht und gezoomt werden. Für das Rotieren des Objektes müssen die Pfeilbuttons verwendet werden. Es wurden nur die jeweiligen Dimensionen umgesetzt. So kann aus einer horizontalen Drehung heraus keine vertikale Drehung ausgeführt werden und umgekehrt. Das Zoomen erfolgt Stufenweise in einer Endlosschleife und wird durch den Button für Drücken ausgelöst.
-
 Im Modus „Lernen/Information“ können Informationslayer auf einem Objekt betrachtet werden, welche via Text Informationen zur Verfügung stellen. Für das Wechseln zwischen den Informationslayern des Objektes müssen die Pfeilbuttons verwendet werden. Es wurden nur der horizontale Wechsel umgesetzt.
 Das Zoomen erfolgt Stufenweise in einer Endlosschleife und wird durch den Button für Drücken ausgelöst. Beim Zoomen wird auf eine Ebene tiefer mit weitere Informationslayer innerhalb des ausgewählten Layers gewechselt.
 Es wurde nur ein mehrfach Zoom für den Layer „Europa“ implementiert.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=0,scale=3.0]{controll_panel}
+	\caption{Steuerungspanel}
+	\label{fig:result7}
+\end{figure}
+
 \subsubsection{Zielfunktionen und Aufgaben an Probanden}
 Die Probanden sollen im Verlauf des Testes folgende Funktionen ausführen
 	\begin{itemize}
-	\item Horizontales rotieren des Objektes im Modus „Endecken“ um 360°
+	\item Horizontales rotieren des Objektes im Modus „Endecken“ um 360 Grad
 	\begin{itemize}
 		\item links herum
 		\item rechts herum
 	\end{itemize}
-	\item Vertikales rotieren des Objektes im Modus „Endecken“ um 360°
+	\item Vertikales rotieren des Objektes im Modus „Endecken“ um 360 Grad
 	\begin{itemize}
 		\item oben herum
 		\item unten herum
 	\end{itemize}
 	\item Testen aller Zoom stufen im Modus „Endecken“
-	• Wechsel zum Modus „Lernen/Information“
+	\item Wechsel zum Modus „Lernen/Information“
 	\item Horizontaler Wechsel zwischen den Informationslayern auf der gleichen Ebene im Modus „Lernen/Information“
 	\begin{itemize}
-		\item 360
+		\item 360 Grad
 	\end{itemize}
 	\item Auffinden aller Informationslayer im Rahmen der Zoomfunktion im Modus „Lernen/Information“
 	\item Wechsel zum Modus „Entdecken“

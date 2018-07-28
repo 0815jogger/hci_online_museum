@@ -19,7 +19,16 @@
 \contentsline {subsection}{\numberline {4.2}Anwendungsf\IeC {\"a}lle f\IeC {\"u}r den high-fidelity Prototypen}{20}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {4.3}Kritische Betrachtung}{21}{subsection.1.4.3}
 \contentsline {section}{\numberline {5}Evaluation}{21}{section.1.5}
-\contentsline {subsection}{\numberline {5.1}Evaluationsauswertung}{21}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {5.2}AttrakDiff}{23}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {5.3}Resultat}{28}{subsection.1.5.3}
-\contentsline {section}{\numberline {6}Zusammenfassung}{28}{section.1.6}
+\contentsline {subsection}{\numberline {5.1}Einleitung}{21}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {5.2}Der Adressat}{22}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {5.3}Evaluationsziele}{22}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {5.4}Aspekte}{23}{subsection.1.5.4}
+\contentsline {subsubsection}{Aktivit\IeC {\"a}ten, Resultate, Leistungen, Reaktionen}{23}{section*.9}
+\contentsline {subsubsection}{Auswirkungen und Ver\IeC {\"a}nderungen}{23}{section*.10}
+\contentsline {subsubsection}{Empfehlung}{24}{section*.11}
+\contentsline {subsubsection}{Steuerung und Modi}{24}{section*.12}
+\contentsline {subsubsection}{Zielfunktionen und Aufgaben an Probanden}{25}{section*.13}
+\contentsline {subsection}{\numberline {5.5}Evaluationsauswertung}{25}{subsection.1.5.5}
+\contentsline {subsubsection}{AttrakDiff}{27}{section*.14}
+\contentsline {subsubsection}{Resultat}{32}{section*.15}
+\contentsline {section}{\numberline {6}Zusammenfassung}{32}{section.1.6}
